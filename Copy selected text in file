@@ -1,0 +1,4 @@
+#!/bin/bash
+path="/home/home/text"
+filename=copytext.$(date +%Y.%m.%d-%k.%M.%S).txt
+xsel -o | tee -a "$path/$filename"
